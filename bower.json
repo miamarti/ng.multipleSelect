@@ -1,0 +1,34 @@
+{
+  "name": "ng-multipleSelect",
+  "description": "Angular Module for rendering the Multiple Select",
+  "version": "0.0.1",
+  "keywords": [
+    "meterialCss",
+    "js",
+    "front-end",
+    "web"
+  ],
+  "homepage": "https://github.com/miamarti/ng.multipleSelect",
+  "main": ["dist/ngMultipleSelect.css", "dist/ngMultipleSelect.js"],
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "/.*",
+    "**/.*",
+    "build",
+    "speed",
+    "test",
+    "*.md"
+  ],
+  "authors": [
+      {
+          "name": "Miller Augusto S. Martins",
+          "email": "miller.augusto@gmail.com",
+          "homepage": "http://br.linkedin.com/pub/miller-augusto/2a/38b/832/"
+      }
+  ],
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:miamarti/ng.multipleSelect.git"
+  }
+}
