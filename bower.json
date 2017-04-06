@@ -1,5 +1,5 @@
 {
-  "name": "ng-materializeMultipleSelect",
+  "name": "ng.multipleSelect",
   "description": "Angular Module for rendering the Multiple Select",
   "version": "0.0.1",
   "keywords": [
