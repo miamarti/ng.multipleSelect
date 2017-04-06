@@ -10,7 +10,8 @@
 }
 
 .multipleSelect.disabled {
-    opacity: 0.4;
+    opacity: 0.4  !important;
+    color: #FFF !important;
 }
 
 .multipleSelect::before {
