@@ -28,7 +28,7 @@
                             $scope.label = activeList.length > 0 ? activeList.join(', ') : 'Selecione';
                         }
                     };
-                    $scope.$watch('ngModel', setUpdate);
+                    $scope.$watchCollection('ngModel', setUpdate);
 
                     /*
                      * Ckeck All method
@@ -75,6 +75,10 @@
                     $scope.setClosed = function () {
                         $scope.open = false;
                     };
+                    
+                    setInterval(function () {
+                        setUpdate($scope.ngModel);
+                    }, 100);
                 },
                 template: function (eltm, attr) {
                     var html = '';
