@@ -84,7 +84,7 @@
                     var html = '',
                         key = parseInt(Math.random() * 100000);
                     html += '<div class="multipleSelect" ng-class="{\'disabled\' : ngDisabled}">';
-                    html += '   <div class="truncate" ng-click="setOpen()">{{label}}</div>';
+                    html += '   <div class="truncate" ng-click="setOpen()"><abbr title="{{label}}">{{label}}</abbr></div>';
                     html += '   <div class="blanket" ng-show="open" ng-click="setClosed()"></div>';
                     html += '   <div class="list animate-show-hide" ng-show="open">';
                     html += '       <div class="label" ng-click="setClosed();">Selecione</div>';
