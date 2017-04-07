@@ -10,7 +10,43 @@ Materialize Css multiple select
   <img src="https://img.shields.io/bower/v/bootstrap.svg">
 </p>
 
+<img src="https://miamarti.github.io/ng.multipleSelect/docs/img/ezgif.com-video-to-gif.gif">
+
 ## Bower install de dependency
 ```
 $ bower install ng.multipleSelect --save
+```
+
+## Implementation
+
+Inside the HTML view:
+```
+<ng-multiple-select ng-model="options" ng-disabled="notActive"></ng-multiple-select>
+```
+
+Inside the Controller:
+```
+angular.module('example').controller('ExampleController', function () {
+
+    this.options = [
+      {value: 'Nilo', label: 'Nilo', checked: false}, 
+      {value: 'Tigre', label: 'Tigre', checked: false}, 
+      {value: 'Ganges', label: 'Ganges', checked: false}
+    ];
+    
+    this.notActive = false;
+});
+```
+
+## Parameters
+
+| Name         | Type    | Dinamic | Mandatory | Description                                                  |
+| ------------ | ------- | ------- | --------- | ------------------------------------------------------------ |
+| ng-model     | Array   | true    | true      | Scope of the attribute that will be the model                |
+| ng-disabled  | Boolean | true    | false     | Set ckeditor to readOnly                                     |
+
+
+## Module AngularJS include
+```
+angular.module('example', ["ngMultipleSelect"]);
 ```
