@@ -29,9 +29,10 @@ Inside the Controller:
 angular.module('example').controller('ExampleController', function () {
 
     this.options = [
-      {value: 'Nilo', label: 'Nilo', checked: false}, 
-      {value: 'Tigre', label: 'Tigre', checked: false}, 
-      {value: 'Ganges', label: 'Ganges', checked: false}
+      {value: '1', label: 'Xuxa', checked: false}, 
+      {value: '2', label: 'Pelé', checked: false}, 
+      {value: '3', label: 'Angélica', checked: false},
+      {value: '4', label: 'Eliana', checked: false}
     ];
     
     this.notActive = false;
