@@ -17,6 +17,11 @@ Materialize Css multiple select
 $ bower install ng.multipleSelect --save
 ```
 
+## Module AngularJS include
+```
+angular.module('example', ["ngMultipleSelect"]);
+```
+
 ## Implementation
 
 Inside the HTML view:
@@ -46,11 +51,6 @@ angular.module('example').controller('ExampleController', function () {
 | ng-model     | Array   | true    | true      | Scope of the attribute that will be the model                |
 | ng-disabled  | Boolean | true    | false     | Set multipleSelect to readOnly                                     |
 
-
-## Module AngularJS include
-```
-angular.module('example', ["ngMultipleSelect"]);
-```
 
 ## Metrics
 
