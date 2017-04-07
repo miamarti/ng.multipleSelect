@@ -44,7 +44,7 @@ angular.module('example').controller('ExampleController', function () {
 | Name         | Type    | Dinamic | Mandatory | Description                                                  |
 | ------------ | ------- | ------- | --------- | ------------------------------------------------------------ |
 | ng-model     | Array   | true    | true      | Scope of the attribute that will be the model                |
-| ng-disabled  | Boolean | true    | false     | Set ckeditor to readOnly                                     |
+| ng-disabled  | Boolean | true    | false     | Set multipleSelect to readOnly                                     |
 
 
 ## Module AngularJS include
