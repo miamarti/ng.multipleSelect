@@ -50,3 +50,7 @@ angular.module('example').controller('ExampleController', function () {
 ```
 angular.module('example', ["ngMultipleSelect"]);
 ```
+
+## Metrics
+
+[![Throughput Graph](https://graphs.waffle.io/miamarti/ng.multipleSelect/throughput.svg)](https://waffle.io/miamarti/ng.multipleSelect/metrics/throughput)
