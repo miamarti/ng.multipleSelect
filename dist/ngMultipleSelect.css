@@ -79,3 +79,10 @@
 .animate-show-hide.ng-hide-remove {
   transition: all linear 0.2s;
 }
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
