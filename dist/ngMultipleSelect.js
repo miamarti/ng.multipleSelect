@@ -9,7 +9,7 @@
                     ngDisabled: '=ngDisabled'
                 },
                 link: function ($scope, elem) {
-
+                    
                     /*
                      * Update component method
                      * @param
@@ -81,14 +81,15 @@
                     }, 100);
                 },
                 template: function (eltm, attr) {
-                    var html = '';
+                    var html = '',
+                        key = parseInt(Math.random() * 100000);
                     html += '<div class="multipleSelect" ng-class="{\'disabled\' : ngDisabled}">';
                     html += '   <div ng-click="setOpen()">{{label}}</div>';
                     html += '   <div class="blanket" ng-show="open" ng-click="setClosed()"></div>';
                     html += '   <div class="list animate-show-hide" ng-show="open">';
                     html += '       <div class="label" ng-click="setClosed();">Selecione</div>';
-                    html += '       <div class="lineCheck"><input ng-checked="checkAllChecked" ng-model="checkAllChecked" type="checkbox" class="filled-in" id="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + '" ng-click="checkAll()" /><label for="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + '">Todos</label></div>';            
-                    html += '       <div class="lineCheck" ng-repeat="$check in ngModel"><input ng-checked="$check.checked" ng-model="$check.checked" ng-click="checkClick()" type="checkbox" class="filled-in" id="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + '{{$id}}" /><label for="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + '{{$id}}">{{$check.label}}</label></div>';
+                    html += '       <div class="lineCheck"><input ng-checked="checkAllChecked" ng-model="checkAllChecked" type="checkbox" class="filled-in" id="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + key + '" ng-click="checkAll()" /><label for="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + key + '">Todos</label></div>';
+                    html += '       <div class="lineCheck" ng-repeat="$check in ngModel"><input ng-checked="$check.checked" ng-model="$check.checked" ng-click="checkClick()" type="checkbox" class="filled-in" id="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + key + '{{$id}}" /><label for="filled-in-box-' + (attr.ngOptions ? attr.ngOptions : '') + key + '{{$id}}">{{$check.label}}</label></div>';
                     html += '   </div>';
                     html += '</div>';
                     return html;
