@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/miamarti/ng.multipleSelectr"
   },
-  "main": ["dist/ngMultipleSelect.css", "dist/ngMultipleSelect.min.js"],
+  "main": "dist/ngMultipleSelect.min.js",
   "dependencies": {
     "jquery": ">= 1.9.1"
   },
