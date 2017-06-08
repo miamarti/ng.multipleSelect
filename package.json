@@ -2,7 +2,7 @@
   "name": "ng.multipleselect",
   "description": "Angular Module for rendering the Multiple Select",
   "author": "Miller Augusto S. Martins <miller.augusto@gmail.com>",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "keywords": [
     "meterialCss",
     "js",
